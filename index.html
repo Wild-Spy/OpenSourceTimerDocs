@@ -24,7 +24,7 @@ title: API Docs
 
 			{% if doc.right_code %}
 				<section class="right-code">
-					{{ doc.right_code | replace: '!SITE_URL!', site.url | replace: '!CODE_START!', '<div class="codex">' | replace: '!CODE_END!', '</div>' | markdownify }}
+					{{ doc.right_code | replace: '!SITE_URL!', site.baseurl | replace: '!CODE_START!', '<div class="codex custom-scroll">' | replace: '!CODE_END!', '</div>' | markdownify }}
 				</section>
 			{% endif %}
 		</section>

@@ -7,18 +7,53 @@ jQuery(function() {
 
 	var $el;
 
-	$("section > div.highlighter-rouge:first-of-type").each(function(i) {
-		var $this = $(this).before("<ul class=\"languages\"></ul>"),
-		$languages = $this.prev(),
-		$notFirst = $this.nextUntil(":not(div.highlighter-rouge, div.codex)"),
-		$all = $this.add($notFirst);
+	$(".codefirst").each(function(i) {
+		buildCodeViewer(i, this);
+	});
+
+	//$("section > div.highlighter-rouge:first-of-type").each(function(i) {
+		//buildCodeViewer(i, this);
+		// var $this = $(this).before("<ul class=\"languages\"></ul>"),
+		// $languages = $this.prev(),
+		// $notfirst = $this.nextuntil(":not(div.highlighter-rouge, .codex)"),
+		// $all = $this.add($notfirst);
+
+		// $all.add($languages).wrapall("<div class=\"code-viewer\"></div>");
+
+
+		// listlanguages($all, $languages);
+
+		// $this.css('display', 'block');
+		// $notfirst.css('display', 'none');
+
+		// $languages.find('a').first().addclass('active');
+
+		// $languages.find('a').click(function() {
+		// 	$all.css('display', 'none');
+		// 	$all.eq($(this).parent().index()).css('display', 'block');
+
+		// 	$languages.find('a').removeclass('active');
+		// 	$(this).addclass('active');
+		// 	return false;
+		// });
+
+		// if ($languages.children().length === 0) {
+		// 	$languages.remove();
+		// }
+	//});
+	
+	function buildCodeViewer($i, $el) {
+		var $el = $($el).before("<ul class=\"languages\"></ul>"),
+		$languages = $el.prev(),
+		$notFirst = $el.nextUntil(":not(div.highlighter-rouge, .codex)"),
+		$all = $el.add($notFirst);
 
 		$all.add($languages).wrapAll("<div class=\"code-viewer\"></div>");
 
 
 		listLanguages($all, $languages);
 
-		$this.css('display', 'block');
+		$el.css('display', 'block');
 		$notFirst.css('display', 'none');
 
 		$languages.find('a').first().addClass('active');
@@ -35,7 +70,7 @@ jQuery(function() {
 		if ($languages.children().length === 0) {
 			$languages.remove();
 		}
-	});
+	}
 
 	function listLanguages($el, $insert) {
 		$el.each(function(i) {

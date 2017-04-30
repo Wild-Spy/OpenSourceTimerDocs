@@ -3,6 +3,45 @@ html, body {
 	margin: 0;
 }
 
+.custom-scroll::-webkit-scrollbar-track
+{
+	background-color: #232323;
+}
+
+.custom-scroll::-webkit-scrollbar
+{
+	padding-top: -10px;
+	height: 10px;
+	background-color: #232323;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+}
+
+.custom-scroll-light::-webkit-scrollbar-track
+{
+	background-color: #ffffff;
+}
+
+.custom-scroll-light::-webkit-scrollbar
+{
+	height: 10px;
+	background-color: #ffffff;
+}
+
+.custom-scroll-light::-webkit-scrollbar-thumb
+{
+	background-color: #a5a5a5;
+}
+
+.codex {
+	overflow-x: auto;
+	white-space: nowrap;
+	padding-bottom: 0;
+}
+
 body, .main {
 	box-sizing: border-box;
 	min-height: 100vh;
@@ -550,4 +589,14 @@ header {
 	text-align: center;
 	font-size: .6em;
 	margin: 30px 0 0 0;
+}
+
+p > code {
+	background: #EEEEEE;
+	padding: 3px;
+	border-radius: 2px;
+}
+
+h5 {
+    margin-bottom: 0px;
 }

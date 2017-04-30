@@ -1,6 +1,6 @@
 ---
-title: Rules
-position: 1.0
+title: Conditions&#58; on
+position: 1.8
 right_code: |
   ~~~ javascript 
   A: enable channel 1 for 30 minutes every 2 hours

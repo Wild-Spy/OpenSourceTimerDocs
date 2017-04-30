@@ -1,6 +1,6 @@
 ---
 title: /books
-position: 1.0
+position: 1.9
 type: get
 description: List all books
 right_code: |
@@ -68,3 +68,4 @@ request("http://api.myapp.com/books?token=YOUR_APP_KEY", function (error, respon
 curl http://sampleapi.readme.com/orders?key=YOUR_APP_KEY
 ~~~
 {: title="Curl" }
+
