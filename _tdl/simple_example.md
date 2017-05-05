@@ -2,10 +2,11 @@
 title: Rules
 position: 1.0
 right_code: |
+  ##### Example Rule
   ~~~ javascript 
   A: enable channel 1 for 30 minutes every 2 hours
   ~~~
-  {: title="Rules" }
+  {: title="Rule" }
   {: class="codefirst" }
   !CODE_START!
     <img src="!SITE_URL!/images/TDL/en_ch1_30min_every_2hours.png" alt="...">

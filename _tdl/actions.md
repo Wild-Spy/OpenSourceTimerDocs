@@ -3,25 +3,26 @@ title: Actions
 description: Actions describe what should happen when a rule changes states.
 position: 1.2
 right_code: |
+  ##### Enable Rule
   ~~~ javascript 
   A: enable channel 1 for 30 minutes every 2 hours
   ~~~
-  {: title="Enable Rule" }
+  {: title="Rule" }
   {: class="codefirst" }
   !CODE_START!
     <img src="!SITE_URL!/images/TDL/en_ch1_30min_every_2hours.png" alt="...">
   !CODE_END!
-  {: title="Enable Schedule" }
-  <div></div>
+  {: title="Schedule" }
+  ##### Disable Rule
   ~~~ javascript 
   A: disable channel 1 for 30 minutes every 2 hours
   ~~~
-  {: title="Disable Rule" }
+  {: title="Rule" }
   {: class="codefirst" }
   !CODE_START!
     <img src="!SITE_URL!/images/TDL/dis_ch1_30mins_every_2hours.png" alt="...">
   !CODE_END!
-  {: title="Disable Schedule" }
+  {: title="Schedule" }
 ---
 Here are two example actions:
 

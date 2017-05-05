@@ -3,28 +3,28 @@ title: Action Targets
 description: Action targets specify what the rule should affect when it changes state.
 position: 1.3
 right_code: |
-  ~~~ javascript 
-  a: enable channel 1 for 30 minutes every 2 hours
-  B: enable rule a for 1 day every every second day
-  ~~~
-  {: title="Rule Target Rule" }
-  {: class="codefirst" }
-  !CODE_START!
-    <img src="!SITE_URL!/images/TDL/en_rule_example.png" alt="...">
-  !CODE_END!
-  {: title="Rule Target Schedule" }
-
-  <div></div>
-
+  ##### Rule With Channel Target
   ~~~ javascript 
   A: enable channel 1 for 30 minutes every 2 hours
   ~~~
-  {: title="Channel Target Rule" }
+  {: title="Rule" }
   {: class="codefirst" }
   !CODE_START!
     <img src="!SITE_URL!/images/TDL/en_ch1_30min_every_2hours.png" alt="...">
   !CODE_END!
-  {: title="Channel Target Schedule" }
+  {: title="Schedule" }
+
+  ##### Rule With Rule Target
+  ~~~ javascript 
+  a: enable channel 1 for 30 minutes every 2 hours
+  B: enable rule a for 1 day every every second day
+  ~~~
+  {: title="Rule" }
+  {: class="codefirst" }
+  !CODE_START!
+    <img src="!SITE_URL!/images/TDL/en_rule_example.png" alt="...">
+  !CODE_END!
+  {: title="Schedule" }
 ---
 As mentioned in [Actions]({{ site.baseurl}}/#tdlactions), each action has the following format.
 
