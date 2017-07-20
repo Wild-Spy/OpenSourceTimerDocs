@@ -34,9 +34,12 @@ Intervals describe when the rule should be 'on' during each `period`.
 
 The second part is the period.  It describes the period over which the rule should be repeated.  For example the period could be `one day`, `2 weeks`, `1 day and 3 hours`, etc.
 
+<div>
+<h4 id="one_shot_rules">One Shot Rules</h4>
 The period can be omitted for one-shot rules.  For example, the condition `for 6 minutes` will run for 6 minutes then never be activated again.
+</div>
 {: .info }
-
+<br/>
 The last part is the starting part.  It describes when the rule should begin.
 
 TODO: write more about starting part and events

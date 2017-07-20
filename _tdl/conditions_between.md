@@ -58,7 +58,7 @@ A: enable channel 1 between 9am and 5pm every day
 
 <div>
 	<p>
-		It's important to include an <code>every</code> part in your <code>between condition</code> rule unless you want a one-shot rule.
+		It's important to include an <code>every</code> part in your <code>between condition</code> rule unless you want a <a href="{{ site.baseurl }}/#one_shot_rules">one-shot rule</a>.
 	</p>
 	<p>Here's an example of what not to do.</p>
 <pre title="Rule" class="codex codefirst">
